@@ -39,9 +39,10 @@ This project implements an AI-powered customer support bot using React, HTML, CS
 1. **Start the development server:**
    ```bash
    cd frontend
+   python -m http.server 8080 //pass it to server
    npm start
    ```
-   This will start a development server and open the application in your default browser at http://localhost:3000.
+   This will start a development server and open the application in your default browser at http://localhost:8000.
 
 ### How it Works
 * The frontend (React, HTML, CSS) provides a user interface with a search form.
