@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Iframe</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .background-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        #searchForm {
+            margin-top: 20px;
+        }
+
+        #results {
+            margin-top: 20px;
+            color: white;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Iframe -->
+    <div class="background-iframe">
+        <iframe src='https://my.spline.design/nexbotrobotcharacterconcept-f93fe2d51ca21e8ed9e3e9a3c3030e9f/'
+                frameborder='0'
+                width='100%'
+                height='100%'
+                style="border:none; overflow:hidden;">
+        </iframe>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Welcome to NexBot</h1>
+        <p>AI-powered customer support</p>
+
+        <!-- Search Box -->
+        <form id="searchForm" onsubmit="event.preventDefault(); performSearch();">
+            <input type="text" id="query" placeholder="Search...">
+            <button type="submit">OK</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script>
+    async function performSearch() {
+        console.log("Search function triggered");
+        const query = document.getElementById('query').value;
+
+        try {
+            const response = await fetch('http://localhost:8000/search', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({question: query})
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            document.getElementById('results').innerText = data.answer;
+        } catch (error) {
+            console.error("Error:", error);
+            document.getElementById('results').innerText = "An error occurred while fetching the results.";
+        }
+    }
+    </script>
+</body>
+</html>

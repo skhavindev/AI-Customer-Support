@@ -1,0 +1,8 @@
+Welcome to Headstarter – Your Launchpad to Success
+
+Headstarter is your gateway to mastering the skills and gaining the experience needed to thrive in the tech industry. Through our innovative fellowship program, you'll work on real-world projects, collaborate with industry professionals, and build a portfolio that sets you apart. Whether you're developing a personal website, creating an AI-powered customer support system, or deploying a product to thousands of users, Headstarter equips you with the tools, mentorship, and community support to accelerate your career.
+
+Each week, you'll dive into a new challenge, applying cutting-edge technologies like OpenAI, AWS, and StripeAPI to solve complex problems. Our curriculum is designed to mimic the fast-paced environment of the tech world, ensuring that by the end of the program, you're not just job-ready – you're innovation-ready.
+
+Join us at Headstarter, where we don't just prepare you for the future – we help you create it.
+
