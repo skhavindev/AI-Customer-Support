@@ -1,4 +1,5 @@
 ## README: AI Customer Support Bot project for Headstarter week 3
+![image](https://github.com/user-attachments/assets/e2d2fe0c-bc45-4642-8d9d-56123c62c6c2)
 
 ### Overview
 This project implements an AI-powered customer support bot using React, HTML, CSS, Python, Langchain, and Groq. The bot provides a user interface for interacting with the AI model and displays the generated responses.
@@ -9,6 +10,7 @@ This project implements an AI-powered customer support bot using React, HTML, CS
 * pip (Python package installer)
 * Required Python libraries: FastAPI, Uvicorn, Langchain, Groq
 * Basic understanding of Python, React, HTML, and CSS
+
 
 ### Installation
 1. **Clone the repository:**
