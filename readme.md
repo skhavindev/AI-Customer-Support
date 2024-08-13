@@ -1,4 +1,4 @@
-## README: AI Customer Support Bot project for Headstarter week 3
+### AI Customer Support Bot project for Headstarter week 3
 ![image](https://github.com/user-attachments/assets/e2d2fe0c-bc45-4642-8d9d-56123c62c6c2)
 
 ### Overview
